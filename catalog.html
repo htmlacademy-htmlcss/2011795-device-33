@@ -74,7 +74,7 @@
         >
           <fieldset class="catalog-filter">
             <legend class="catalog-filter-title">Стоимость</legend>
-            <input type="range" min="0" max="5000" value="500"/>
+            <input type="range" min="0" max="5000" value="500" />
           </fieldset>
 
           <fieldset class="catalog-filter">
@@ -149,20 +149,135 @@
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
                 <label class="control" for="with-bluetooth">
-                  <input class="control-input" type="radio" id='with-bluetooth' name="bluetooth" value="on" checked/>
+                  <input
+                    class="control-input"
+                    type="radio"
+                    id="with-bluetooth"
+                    name="bluetooth"
+                    value="on"
+                    checked
+                  />
                   Есть
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control" for="no-bluetooth">
-                  <input class="control-input" type="radio" id='no-bluetooth' name="bluetooth" value="off"/>
+                  <input
+                    class="control-input"
+                    type="radio"
+                    id="no-bluetooth"
+                    name="bluetooth"
+                    value="off"
+                  />
                   Нет
                 </label>
               </li>
             </ul>
-        </fieldset>
-        <button class="button" type="submit">Показать</button>
+          </fieldset>
+          <button class="button" type="submit">Показать</button>
         </form>
+      </section>
+
+      <section class="catalog-products">
+        <h2 class="catalog-products-sort">Сортировка</h2>
+        <select class="select-control" aria-label="Сортировка">
+          <option value="popular">популярное</option>
+          <option value="cheap">дешёвое</option>
+          <option value="expensive">дорогое</option>
+        </select>
+        <a href="#" class="sort-direction-link desc">
+          <img
+            class="sort-direction-image"
+            src="#"
+            alt="Сортировка по убыванию"
+          />
+        </a>
+        <a href="#" class="sort-direction-link asc">
+          <img
+            class="sort-direction-image"
+            src="#"
+            alt="Сортировка по возрастанию"
+          />
+        </a>
+
+        <ul class="product-list">
+          <li class="product-card">
+            <a class="product-card-link" href="product.html">
+              <img
+                class="product-card-image"
+                src="#"
+                alt="Любительская селфи-палка"
+              />
+              <h3 class="product-card-title">Любительская селфи-палка</h3>
+            </a>
+            <span class="product-card-price">500 ₽</span>
+          </li>
+
+          <li class="product-card">
+            <a class="product-card-link" href="product.html">
+              <img
+                class="product-card-image"
+                src="#"
+                alt="Профессиональная селфи-палка"
+              />
+              <h3 class="product-card-title">Профессиональная селфи-палка</h3>
+            </a>
+            <span class="product-card-price">1500 ₽</span>
+          </li>
+
+          <li class="product-card">
+            <a class="product-card-link" href="product.html">
+              <img
+                class="product-card-image"
+                src="#"
+                alt="Непотопляемая селфи-палка"
+              />
+              <h3 class="product-card-title">Непотопляемая селфи-палка</h3>
+            </a>
+            <span class="product-card-price">2500 ₽</span>
+          </li>
+
+          <li class="product-card">
+            <a class="product-card-link" href="product.html">
+              <img
+                class="product-card-image"
+                src="#"
+                alt="Селфи-палка «Следуй за мной»"
+              />
+              <h3 class="product-card-title">Селфи-палка «Следуй за мной»</h3>
+            </a>
+            <span class="product-card-price">1500 ₽</span>
+          </li>
+        </ul>
+        <button class="download-more">Загрузить еще</button>
+
+        <ul class="pagination">
+          <li class="pagination-item">
+            <a class="pagination-link pagination-prev">
+              <span class="visually-hidden">Назад</span>
+            </a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link pagination-current">1</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">2</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">3</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">...</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">15</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link pagination-next" href="#">
+              <span class="visually-hidden">Вперед</span>
+            </a>
+          </li>
+        </ul>
       </section>
     </main>
 
