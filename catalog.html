@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <a class="logo-link" href="https://htmlacademy.ru/">
+        <img class="logo" src="#" alt="Логоттип компании Девайс" />
+      </a>
+
+      <form class="search">
+        <input class="search-input" placeholder="Текст поиска" />
+        <button class="search-button">Найти</button>
+      </form>
+
+      <ul class="user-menu-list">
+        <li class="user-menu-item">
+          <a class="user=menu-link" href="#">Войти</a>
+        </li>
+        <li class="user-menu-item visually-hidden">
+          <a class="user=menu-link" href="#">Выйти</a>
+        </li>
+        <li class="user-menu-item">
+          <a class="user=menu-link" href="#">Сравнить</a>
+        </li>
+        <li class="user-menu-item">
+          <a class="user=menu-link" href="#">Корзина</a>
+        </li>
+      </ul>
+      <nav class="user-menu">
+        <ul class="user-menu-list">
+          <li class="user-menu-item">
+            <a class="user=menu-link" href="#">Каталог товаров</a>
+          </li>
+          <li class="user-menu-item">
+            <a class="user=menu-link" href="#">Доставка</a>
+          </li>
+          <li class="user-menu-item">
+            <a class="user=menu-link" href="#">Гарантия</a>
+          </li>
+          <li class="user-menu-item">
+            <a class="user=menu-link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main-inner">
+      <header class="inner-header">
+        <h1 class="inner-header-title">Моноподы для селфи</h1>
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="index.html">Главная</a>
+          </li>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link">Моноподы для селфи</a>
+          </li>
+        </ul>
+      </header>
+
+      <section class="catalog-products">
+        <h2 class="catalog-products-filter">Фильтр</h2>
+        <form
+          class="catalog-filter"
+          action="https://echo.htmlacademy.ru/"
+          method="get"
+        >
+          <fieldset class="catalog-filter">
+            <legend class="catalog-filter-title">Стоимость</legend>
+            <input type="range" min="0" max="5000" value="500"/>
+          </fieldset>
+
+          <fieldset class="catalog-filter">
+            <legend class="catalog-filter-title">Цвет</legend>
+            <ul class="catalog-filter-list">
+              <li class="catalog-filter-item">
+                <label class="control" for="black">
+                  <input
+                    class="control-input"
+                    type="checkbox"
+                    name="black"
+                    id="black"
+                    checked
+                  />
+                  Черный
+                </label>
+              </li>
+
+              <li class="catalog-filter-item">
+                <label class="control" for="white">
+                  <input
+                    class="control-input"
+                    type="checkbox"
+                    name="white"
+                    id="white"
+                    checked
+                  />
+                  Белый
+                </label>
+              </li>
+
+              <li class="catalog-filter-item">
+                <label class="control" for="blue">
+                  <input
+                    class="control-input"
+                    type="checkbox"
+                    name="blue"
+                    id="blue"
+                  />
+                  Синий
+                </label>
+              </li>
+
+              <li class="catalog-filter-item">
+                <label class="control" for="red">
+                  <input
+                    class="control-input"
+                    type="checkbox"
+                    name="red"
+                    id="red"
+                  />
+                  Красный
+                </label>
+              </li>
+
+              <li class="catalog-filter-item">
+                <label class="control" for="pink">
+                  <input
+                    class="control-input"
+                    type="checkbox"
+                    name="pink"
+                    id="pink"
+                  />
+                  Розовый
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="catalog-filter">
+            <legend class="catalog-filter-title">Bluetooth</legend>
+            <ul class="catalog-filter-list">
+              <li class="catalog-filter-item">
+                <label class="control" for="with-bluetooth">
+                  <input class="control-input" type="radio" id='with-bluetooth' name="bluetooth" value="on" checked/>
+                  Есть
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="control" for="no-bluetooth">
+                  <input class="control-input" type="radio" id='no-bluetooth' name="bluetooth" value="off"/>
+                  Нет
+                </label>
+              </li>
+            </ul>
+        </fieldset>
+        <button class="button" type="submit">Показать</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <section class="footer-address">
+        <h2 class="visually-hidden">Компания Девайс</h2>
+        <a class="logo-link" href="https://htmlacademy.ru/">
+          <img class="logo" src="#" alt="Логоттип компании Девайс" />
+        </a>
+        <p class="about-text">
+          Санкт-Петербург, набережная реки Карповки, 5, литера П.
+        </p>
+        <img class="about-decor" src="#" alt="Футер, адрес" />
+      </section>
+
+      <section class="footer-user-menu">
+        <h2 class="visually-hidden">Меню пользователя</h2>
+        <nav class="user-menu">
+          <ul class="user-menu-list">
+            <li class="user-menu-item">
+              <a class="user=menu-link" href="#">Доставка</a>
+            </li>
+            <li class="user-menu-item">
+              <a class="user=menu-link" href="#">Гарантия</a>
+            </li>
+            <li class="user-menu-item">
+              <a class="user=menu-link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+
+        <h2 class="visually-hidden">Компания Девайс в социальных сетях</h2>
+        <ul class="social-list">
+          <li class="socia-item">
+            <a
+              class="socia-item-link"
+              href="https://www.facebook.com/htmlacademy"
+            >
+              <img
+                class="social-item-image"
+                src="#"
+                alt="Компания Девайс в Facebook"
+              />
+            </a>
+          </li>
+          <li class="socia-item">
+            <a
+              class="socia-item-link"
+              href="https://www.instagram.com/htmlacademy/"
+            >
+              <img
+                class="social-item-image"
+                src="#"
+                alt="Компания Девайс в Instagram"
+              />
+            </a>
+          </li>
+          <li class="socia-item">
+            <a
+              class="socia-item-link"
+              href="https://twitter.com/htmlacademy_ru"
+            >
+              <img
+                class="social-item-image"
+                src="#"
+                alt="Компания Девайс в Twitter"
+              />
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="footer-phone">
+        <h2 class="visually-hidden">Телефон компании Девайс</h2>
+        <a class="about-phone" href="tel:88128121212">+7 (812) 812-12-12</a>
+        <a class="footer-link">
+          <img class="footer-link-image" src="#" alt="Компания девайс" />
+        </a>
+      </section>
+    </footer>
+  </body>
+</html>
