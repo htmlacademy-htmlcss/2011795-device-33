@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link href="./styles/styles.css" rel="stylesheet" />
+    <title>HTML Academy: Девайс</title>
   </head>
   <body>
     <header class="page-header">
@@ -50,10 +51,10 @@
           <a class="user-menu-link" href="#">Корзина</a>
         </li>
       </ul>
-      <nav class="user-menu">
-        <ul class="user-menu-list">
-          <li class="user-menu-item">
-            <a class="user-menu-link" href="#">Каталог товаров</a>
+      <nav>
+        <ul class="nav-menu-list">
+          <li class="nav-menu-item">
+            <a class="nav-menu-link" href="#">Каталог товаров</a>
             <img
               src="images/plus-icon.svg"
               alt="Каталог товаров"
@@ -61,14 +62,14 @@
               height="50"
             />
           </li>
-          <li class="user-menu-item">
-            <a class="user-menu-link" href="#">Доставка</a>
+          <li class="nav-menu-item">
+            <a class="nav-menu-link" href="#">Доставка</a>
           </li>
-          <li class="user-menu-item">
-            <a class="user-menu-link" href="#">Гарантия</a>
+          <li class="nav-menu-item">
+            <a class="nav-menu-link" href="#">Гарантия</a>
           </li>
-          <li class="user-menu-item">
-            <a class="user-menu-link" href="#">Контакты</a>
+          <li class="nav-menu-item">
+            <a class="nav-menu-link" href="#">Контакты</a>
           </li>
         </ul>
       </nav>
@@ -85,7 +86,7 @@
             <a class="breadcrumbs-link" href="catalog.html">Каталог товаров</a>
           </li>
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link">Моноподы для селфи</a>
+            <a class="breadcrumbs-link" href="#">Моноподы для селфи</a>
           </li>
         </ul>
       </header>
@@ -278,29 +279,25 @@
 
         <ul class="pagination">
           <li class="pagination-item">
-            <a class="pagination-link pagination-prev">
-              <span class="visually-hidden">Назад</span>
-            </a>
+            <a class="pagination-link pagination-prev"> Назад </a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link pagination-current">1</a>
+            <a class="pagination-link pagination-number">1</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#">2</a>
+            <a class="pagination-link pagination-number" href="#">2</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#">3</a>
+            <a class="pagination-link pagination-number" href="#">3</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#">...</a>
+            <a class="pagination-link pagination-number" href="#">...</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#">15</a>
+            <a class="pagination-link pagination-number" href="#">15</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link pagination-next" href="#">
-              <span class="visually-hidden">Вперед</span>
-            </a>
+            <a class="pagination-link pagination-next" href="#"> Вперед </a>
           </li>
         </ul>
       </section>
@@ -326,15 +323,15 @@
       <section class="footer-user-menu">
         <h2 class="visually-hidden">Меню пользователя</h2>
         <nav class="user-menu">
-          <ul class="user-menu-list">
-            <li class="user-menu-item">
-              <a class="user-menu-link" href="#">Доставка</a>
+          <ul class="nav-menu-list">
+            <li class="nav-menu-item">
+              <a class="nav-menu-link footer-link" href="#">Доставка</a>
             </li>
-            <li class="user-menu-item">
-              <a class="user-menu-link" href="#">Гарантия</a>
+            <li class="nav-menu-item">
+              <a class="nav-menu-link footer-link" href="#">Гарантия</a>
             </li>
-            <li class="user-menu-item">
-              <a class="user-menu-link" href="#">Контакты</a>
+            <li class="nav-menu-item">
+              <a class="nav-menu-link footer-link" href="#">Контакты</a>
             </li>
           </ul>
         </nav>

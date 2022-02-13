@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./styles/styles.css" rel="stylesheet">
     <title>HTML Academy: Девайс</title>
   </head>
   <body>
@@ -50,10 +51,10 @@
           <a class="user-menu-link" href="#">Корзина</a>
         </li>
       </ul>
-      <nav class="user-menu">
-        <ul class="user-menu-list">
-          <li class="user-menu-item">
-            <a class="user-menu-link" href="#">Каталог товаров</a>
+      <nav>
+        <ul class="nav-menu-list">
+          <li class="nav-menu-item">
+            <a class="nav-menu-link" href="#">Каталог товаров</a>
             <img
               src="images/plus-icon.svg"
               alt="Каталог товаров"
@@ -61,14 +62,14 @@
               height="50"
             />
           </li>
-          <li class="user-menu-item">
-            <a class="user-menu-link" href="#">Доставка</a>
+          <li class="nav-menu-item">
+            <a class="nav-menu-link" href="#">Доставка</a>
           </li>
-          <li class="user-menu-item">
-            <a class="user-menu-link" href="#">Гарантия</a>
+          <li class="nav-menu-item">
+            <a class="nav-menu-link" href="#">Гарантия</a>
           </li>
-          <li class="user-menu-item">
-            <a class="user-menu-link" href="#">Контакты</a>
+          <li class="nav-menu-item">
+            <a class="nav-menu-link" href="#">Контакты</a>
           </li>
         </ul>
       </nav>
@@ -117,18 +118,23 @@
           замаскированным под стандартную камеру.
         </p>
         <a class="slider-detail" href="#">Подробнее</a>
-        <h3><b>800 м</b></h3>
-        <span>Дальность полета</span>
-        <h3><b>50 м</b></h3>
-        <span>Радиус поражения</span>
+        <h3>
+          <div class="slider-info-num">800 м</div>
+          <div class="slider-info-name">Дальность полета</div>
+        </h3>
+        <h3>
+          <div class="slider-info-num">50 м</div>
+          <div class="slider-info-name">Радиус поражения</div>
+        </h3>
+
       </section>
 
       <section class="catalog">
         <h2 class="visually-hidden">Каталог товаров</h2>
-        <ul>
-          <li>
+        <ul class="catalog-menu-list">
+          <li class="catalog-menu-item">
             <img
-              class="catalog-menu"
+              class="catalog-menu-image"
               src="images/categories-virtuality.svg"
               alt="Виртуальная реальность"
               width="160"
@@ -136,9 +142,9 @@
             />
             <a class="catalog-link" href="#">Виртуальная реальность</a>
           </li>
-          <li>
+          <li class="catalog-menu-item">
             <img
-              class="catalog-menu"
+              class="catalog-menu-image"
               src="images/categories-selfy.svg"
               alt="Моноподы для селфи"
               width="160"
@@ -146,9 +152,9 @@
             />
             <a class="catalog-link" href="#">Моноподы для селфи</a>
           </li>
-          <li>
+          <li class="catalog-menu-item">
             <img
-              class="catalog-menu"
+              class="catalog-menu-image"
               src="images/categories-cameras.svg"
               alt="Экшн-камеры"
               width="160"
@@ -156,9 +162,9 @@
             />
             <a class="catalog-link" href="#">Экшн-камеры</a>
           </li>
-          <li>
+          <li class="catalog-menu-item">
             <img
-              class="catalog-menu"
+              class="catalog-menu-image"
               src="images/categories-fitness.svg"
               alt="Фитнес-браслеты"
               width="160"
@@ -166,9 +172,9 @@
             />
             <a class="catalog-link" href="#">Фитнес-браслеты</a>
           </li>
-          <li>
+          <li class="catalog-menu-item">
             <img
-              class="catalog-menu"
+              class="catalog-menu-image"
               src="images/categories-watch.svg"
               alt="Умные часы"
               width="160"
@@ -176,9 +182,9 @@
             />
             <a class="catalog-link" href="#">Умные часы</a>
           </li>
-          <li>
+          <li class="catalog-menu-item">
             <img
-              class="catalog-menu"
+              class="catalog-menu-image"
               src="images/categories-dron.svg"
               alt="Квадрокоптеры"
               width="160"
@@ -198,7 +204,7 @@
             </button>
           </li>
           <li class="advantages-item">
-            <button class="advantages-button">Гарантии</button>
+            <button class="advantages-button">Гарантия</button>
           </li>
           <li class="advantages-item">
             <button class="advantages-button">Кредит</button>
@@ -282,6 +288,7 @@
           <input class="subscribe-input" placeholder="Ваш e-mail" />
           <button class="subscribe-button">Подписаться</button>
         </form>
+
         <img
           class="subscribe-image"
           src="images/tick-big.svg"
@@ -289,7 +296,7 @@
           width="16"
           height="16"
         />
-        <p class="subscribe-text">Это бесплатно</p>
+        <span class="subscribe-text">Это бесплатно</span>
       </section>
     </main>
 
@@ -313,15 +320,15 @@
       <section class="footer-user-menu">
         <h2 class="visually-hidden">Меню пользователя</h2>
         <nav class="user-menu">
-          <ul class="user-menu-list">
-            <li class="user-menu-item">
-              <a class="user-menu-link" href="#">Доставка</a>
+          <ul class="nav-menu-list">
+            <li class="nav-menu-item">
+              <a class="nav-menu-link footer-link" href="#">Доставка</a>
             </li>
-            <li class="user-menu-item">
-              <a class="user-menu-link" href="#">Гарантия</a>
+            <li class="nav-menu-item">
+              <a class="nav-menu-link footer-link" href="#">Гарантия</a>
             </li>
-            <li class="user-menu-item">
-              <a class="user-menu-link" href="#">Контакты</a>
+            <li class="nav-menu-item">
+              <a class="nav-menu-link footer-link" href="#">Контакты</a>
             </li>
           </ul>
         </nav>
